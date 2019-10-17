@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #CCC;
+    padding: 2em;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+.wrapper {
+    position: relative;
+    border: 10px solid red;
+}
+
+.site {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2em;
+    background: #FFF;
+    border: 10px solid #000;
+    /* z-index: 10; */
+}
+
+.site p {
+    position: relative;
+    /* z-index: 10; */
+    color: #FFF;
+}
+
+.button {
+    display: block;
+    background: #000;
+    color: #FFF;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    bottom: 1em;
+}

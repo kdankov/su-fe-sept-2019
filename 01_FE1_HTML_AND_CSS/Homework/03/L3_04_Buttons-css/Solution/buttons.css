@@ -1,0 +1,55 @@
+@import url('../fontawesome/css/all.css');
+
+.button {
+    display: inline-block;
+    margin-right: 0.5em;
+    border: 2px solid #000;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+
+.button.fill {
+    background-color: #000;
+    color: #FFF;
+}
+
+.button.fill.hover,
+.button.fill:hover {
+    background-color: #080;
+    color: #FFF;
+}
+
+.button.icon i {
+    padding-right: 0.5em;
+}
+
+.icon:before {
+    display: inline-block;
+    content: '';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+    transition: all 0.3s ease-in;
+
+}
+
+.icon-globe:before { content: '\f0ac'; }
+
+
+.button.icon.hover:before,
+.button.icon:hover:before {
+    color: #080;
+}
+
+.button.icon.hover,
+.button.icon:hover {
+    border-color: #080;
+}

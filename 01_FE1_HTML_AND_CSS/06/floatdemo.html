@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float</title>
+    <style>
+        
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: #F00;
+            /* overflow: hidden; */
+        }
+
+        .main {
+            background: #F0F;
+        }
+
+        .aside {
+            float: left;
+            width: 50%;
+            background: #FF0;
+            padding: 1em;
+        }
+
+        .image {
+            display: none;
+            width: 50%;
+            background: #000;
+            float: left;
+            margin: 0 1em 1em 0;
+        }
+
+        strong {
+            display: inline-block;
+            background: #FFF;
+            padding: 2em;
+        }
+
+        .image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .cleaner {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="main">
+
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1558981396-5fcf84bdf14d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+            <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+            
+        </div>
+        
+        <div class="aside">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+        </div>
+
+        <div class="cleaner"></div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nobis reiciendis in veniam eius iure? Reprehenderit, fuga omnis voluptatibus quisquam, velit exercitationem ab consequuntur atque possimus odit eveniet doloribus qui.</p>
+    </div>
+</body>
+</html>

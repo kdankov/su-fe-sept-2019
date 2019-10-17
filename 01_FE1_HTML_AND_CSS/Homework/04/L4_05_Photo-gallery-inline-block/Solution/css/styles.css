@@ -1,0 +1,26 @@
+@import url('reset.css');
+@import url('gallery.css');
+
+html {
+    font-size: 21px;
+}
+
+.site {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.hero {
+    color: #FFF;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url('../images/bike.jpg');
+    background-position: center, left bottom;
+    background-repeat: no-repeat, repeat;
+    /* background-size: cover, cover; */
+    padding: 30vh 5vw 10vh;
+    text-align: right;
+}
+
+.hero h1 {
+}
+
+.hero

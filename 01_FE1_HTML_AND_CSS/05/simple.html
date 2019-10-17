@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        li { list-style-type: disc; }
+
+        li li { list-style-type: square; }
+
+
+        p + p + ul {
+
+        }
+
+        article:only-child {
+
+        }
+
+        form > input[type="email"]:last-of-type {
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .site > * {
+            min-height: 5em;
+        }
+
+        .site-header {
+            background: #090;
+        }
+
+        .site-main {
+            background: #009;
+            display: inline-block;
+            width: 60%;
+        }
+
+        .site-sidebar {
+            background: #099;
+            display: inline-block;
+            width: 40%;
+        }
+
+        .site-footer {
+            background: #900;
+        }
+
+    
+    </style>
+</head>
+<body>
+    
+    <div class="site">
+        <div class="site-header">
+            Header
+        </div>
+        <div class="site-main">
+            Main
+        </div><div class="site-sidebar">
+                Sidebar
+            </div>
+        <div class="site-footer">
+            Footer
+        </div>
+    </div>
+
+</body>
+</html>
