@@ -1,0 +1,70 @@
+.player {
+
+}
+
+.player .screen {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #090;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.9);
+}
+
+.player .screen:before {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.player .controls {
+    display: flex;
+    padding: 1em 0;
+    align-items: center;
+}
+
+.controls a {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    background: #333;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.controls a + a {
+    margin-left: 1em;
+}
+
+.controls .track {
+    flex-grow: 1;
+    background: #999;
+    margin: 0 1em;
+    min-height: 0.5em;
+    border-radius: 0.2em;
+    position: relative;
+}
+
+.controls .track:before {
+    display: block;
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #A00;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.4);
+}
+
+.controls .track:after {
+    display: block;
+    content: '';
+    width: 30%;
+    height: 0.5em;
+    background: #C00;
+    border-radius: 0.2em;
+}

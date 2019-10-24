@@ -1,0 +1,23 @@
+body {
+    padding: 4em;
+}
+
+.container {
+    border: 2px solid #000;
+    background: #666;
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    min-height: 500px;
+}
+
+.item {
+    border: 1px solid #000;
+    background: #FFF;
+    flex: 1 0 5em;
+}
+
+.item:nth-child(4) {
+    flex-grow: 4;
+    order: -1;
+}

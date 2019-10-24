@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 "Verdana", sans-serif;
+}
+
+body {
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 4em
+}
+
+.site-content {
+    flex-grow: 1;
+    background: #666;
+    display: flex;
+}
+
+.site-content p {
+     background: #FFF;
+     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+     width: 30em;
+     padding: 2em;
+     border-radius: 0.3em;
+     margin: auto;
+}
+
+.site-header {
+    padding-bottom: 2em;
+    border-bottom: 5px solid #000;
+    margin-bottom: 1em;
+}
+
+.site-footer {
+    padding-top: 2em;
+    border-top: 5px solid #000;
+    margin-top: 1em;
+}

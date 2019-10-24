@@ -1,0 +1,136 @@
+.site-nav {
+    display: none;
+}
+
+.site-nav ul {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.site-nav ul ul li a {
+    padding-left: 3em;
+}
+
+.site-nav li {
+    display: block;
+    list-style: none outside;
+}
+
+
+.site-nav a {
+    display: block;
+    color: #FFF;
+    padding: 1em 1.5em;
+    text-decoration: none;
+}
+
+
+.site-nav-label {
+    display: none;
+}
+
+.site-nav-toggle + .site-header .site-nav-label .open { display: block; }
+.site-nav-toggle + .site-header .site-nav-label .close { display: none; }
+
+.site-nav-toggle:checked + .site-header .site-nav-label .open { display: none; }
+.site-nav-toggle:checked + .site-header .site-nav-label .close { display: block; }
+
+.site-nav-toggle:checked + .site-header .site-title,
+.site-nav-toggle:checked + .site-header .site-nav-label {
+    position: relative;
+    z-index: 10;
+}
+
+.site-nav-toggle:checked + .site-header .site-nav {
+    display: block;
+}
+
+.site > input {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media ( max-width: 900px ) {
+
+    .site-nav-label {
+        display: block;
+        background: #090;
+        color: #FFF;
+        border-radius: 0.3em;
+        padding: 0.5em 1em;
+    }
+    
+    .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 2em;
+    }
+
+    .site-nav-toggle:checked + .site-header {
+        position: fixed;
+        width: calc( 100% - 4em );
+    }
+
+    .site-nav-toggle:checked + .site-header .site-nav {
+        position: fixed;
+        top: 0; left: 0; right:0; bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,1);
+    }
+
+    .site-nav ul {
+        background: rgba(255,255,255,0.5);
+    }
+    
+    .site-nav ul li a {
+        color: #000;
+    }
+}
+
+@media ( min-width: 901px ) {
+     
+    .site-nav {
+        display: block;
+        margin: 2em 0;
+    }
+
+    .site-nav > ul {
+        display: flex;
+    }
+
+    .site-nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 10em;
+        background-color: #000;
+    }
+
+    .site-nav ul ul ul {
+        top: 0;
+        left: 100%;
+    }
+    
+    .site-nav li {
+        position: relative;
+    }
+
+    .site-nav li:hover > ul {
+        display: block;
+    }
+
+    .site-nav li:hover > a,
+    .site-nav a:hover {
+        background-color: #090;
+    }
+
+}

@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Georgia, serif;
+}
+
+body, button, input {
+    font: inherit;
+}
+
+body {
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    background: #FFF;
+    display: flex;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 0.4em;
+}
+
+.banner-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    flex: 0 1 30em;
+    width: 30em;
+    padding: 2em 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-header {
+    display: flex;
+    padding-bottom: 0.75em;
+    align-items: center;
+}
+
+.tag {
+    background: #666;
+    color: #FFF;
+    border-radius: 0.9em;
+    padding: 0.2em 0.4em;
+    font-size: 0.8em;
+}
+
+.tag + .tag {
+    margin-left: 0.5em;
+}
+
+.banner-header h3 {
+    margin-right: auto;
+}
+
+.banner-details {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+}
+
+.banner-details li {
+    display: block;
+}
+
+.banner-meta {
+    background: #090;
+    color: #FFF;
+    font-size: 1.5em;
+    writing-mode: vertical-rl;
+    text-align: center;
+    padding: 0 1em;
+    box-shadow: 0 0 0.7em 0 rgba(0, 0, 0, 0.3);
+
+}

@@ -1,0 +1,30 @@
+body {
+    padding: 2em;
+}
+
+.site {
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-main {
+    flex: 1 1 40em;
+    padding-right: 2em;
+    order: 2;
+}
+
+.site-sidebar {
+    flex: 1 1 20em;
+    order: 1;
+}

@@ -1,0 +1,51 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery::before,
+.gallery::after {
+    display: block;
+    content: '';
+    order: 1000;
+}
+
+.gallery li,
+.gallery img,
+.gallery a,
+.gallery span {
+    display: block;
+}
+
+.gallery::before,
+.gallery::after,
+.gallery li {
+    flex: 0 0 22%;
+    margin-bottom: 4%;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: auto;
+    height: 100%;
+}
+
+.gallery .media {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .media:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.gallery .media img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

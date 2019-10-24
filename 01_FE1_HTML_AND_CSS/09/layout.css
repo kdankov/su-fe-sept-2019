@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Verdana, sans-serif;
+}
+
+body, button, input, select {
+    font: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+
+body {
+    /* padding: 2em; */
+}
+
+.site {
+    max-width: 85.71em;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 2em;
+    line-height: 1;
+}
+
+@media ( min-width: 85.71em ) {
+
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .site-footer,
+    .site-header {
+        flex: 1 0 100%;
+    }
+
+    .site-main {
+        flex: 0 1 70%;
+        background: #F0F;
+    }
+
+    .site-sidebar {
+        flex: 0 1 30%;
+        background: #FF0;
+    }
+}
